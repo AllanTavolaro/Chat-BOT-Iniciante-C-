@@ -1,4 +1,4 @@
-﻿string LerEntrada(string mensagem, ref bool continuar)
+string LerEntrada(string mensagem, ref bool continuar)
 {
     Console.WriteLine(mensagem);
     string entrada = Console.ReadLine()?.Trim() ?? string.Empty;
@@ -21,10 +21,10 @@ while (continuar)
 
     Console.WriteLine("\n--------------------------------\n");
 
-    string nome = LerEntrada("Salve! Qual é seu nome?", ref continuar);
+    string nome = LerEntrada("Eae! Qual é seu nome?", ref continuar);
     if (!continuar) break;
 
-    string idade = LerEntrada($"Bot: Muito prazer em te conhecer, {nome}! Quantos anos cê tem?", ref continuar);
+    string idade = LerEntrada($"Bot: Muito prazer em te conhecer, {nome}! Quantos anos você tem?", ref continuar);
     if (!continuar) break;
 
     string resposta = LerEntrada("Você aprendeu a salvar as respostas?", ref continuar).ToLower();
@@ -32,7 +32,7 @@ while (continuar)
 
     if (resposta == "sim")
     {
-        Console.WriteLine("Parabéns, você tá ficando bom em C#!");
+        Console.WriteLine("Parabéns, você ta ficando bom em C#!");
     }
     else if (resposta == "não")
     {
@@ -48,7 +48,7 @@ while (continuar)
 
     if (nivel == "iniciante")
     {
-        Console.WriteLine("Boa moleque, continua praticando que vai dar bom!");
+        Console.WriteLine("Boa, continua praticando que vai dar bom!");
     }
     else if (nivel == "intermediário")
     {
@@ -56,7 +56,7 @@ while (continuar)
     }
     else
     {
-        Console.WriteLine("Você é o cara, fio! Tá voando!");
+        Console.WriteLine("Você é o cara, Tá voando!");
     }
 
     int pontos = 0;
@@ -70,12 +70,12 @@ while (continuar)
 
     if (respostaQuiz == "c" || respostaQuiz == "lulu")
     {
-        Console.WriteLine("Acertou em seu viciadinho");
+        Console.WriteLine("Acertou, você sabe mesmo em");
         pontos++;
     }
     else
     {
-        Console.WriteLine("Errou lazarento A resposta certa era: Lulu");
+        Console.WriteLine("Errou, que pena,  A resposta certa era: Lulu");
     }
 
     Console.WriteLine($"Você fez {pontos} ponto(s) no quiz!");
